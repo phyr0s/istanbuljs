@@ -549,7 +549,7 @@ function coverIfBranches(path) {
     if (ignoreElse) {
         this.setAttr(n.alternate, 'skip-all', true);
     } else {
-        this.insertBranchCounter(path.get('alternate'), branch);
+        this.insertBranchCounter(path.get('alternate'), branch, n.loc);
     }
 }
 
